@@ -1,0 +1,11 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "env": {
+    "coverage": false,
+    "version": "local"
+  },
+  "ignoreTestFiles": [
+    "*.md",
+    "*.html"
+  ]
+}

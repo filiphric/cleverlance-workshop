@@ -1,0 +1,10 @@
+{
+  "include": [
+    "*.ts"
+  ],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "types": ["cypress"]
+  }
+}
