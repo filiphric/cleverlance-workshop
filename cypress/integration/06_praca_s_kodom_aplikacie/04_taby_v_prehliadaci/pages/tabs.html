@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: #282a3a;
+        font-family: sans-serif;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 10% auto;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        height: 100vh;
+        color: aliceblue;
+      }
+      h1 {
+        margin: 30px;
+        grid-column-start: span 3;
+      }
+      a, a:visited {
+        margin: 10px;
+        font-size: 20px;
+        text-decoration: none;
+        display: inline-block;
+        grid-column-start: span 3;
+        cursor: pointer;
+        color: white;
+        border: 1px white solid;
+        padding: 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Links</h1>
+    <a href="https://google.com" target="_blank">🌐 Link that opens a new window by HTML</a>
+    <a id="jslink" href="">🔗 Link that opens a new window by JS</a>
+  </body>
+  <script defer>
+    const $ = document.querySelector.bind(document)
+    $('#jslink').addEventListener('click', e => {
+      window.open('https://google.com', '_blank')
+    })
+  </script>
+</html>
