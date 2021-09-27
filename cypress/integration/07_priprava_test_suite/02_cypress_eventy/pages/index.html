@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Multiple redirects</title>
+</head>
+<body>
+  <body>
+    <h1>Page one</h1>
+    <a href="page2.html">
+      Let’s go!
+    </a>
+    <button id="confirm">
+      Confirm dialog
+    </button>
+    <p id="result" style="display:none"></p>
+    <button id="alert">
+      Alert
+    </button>
+  </body>
+  <script>
+    const $ = document.querySelector.bind(document)
+    let result
+    $('#confirm').addEventListener('click', () => {
+      $('#result').style = "display: block"
+      if (window.confirm('Are you sure?')) {
+        $('#result').textContent = 'Your answer: OK' 
+      } else {
+        $('#result').textContent = 'Your answer: Cancel' 
+      }
+    })
+    
+    $('#alert').addEventListener('click', () => {
+      window.alert('Hello there!')
+    })
+  </script>
+</body>
+</html>

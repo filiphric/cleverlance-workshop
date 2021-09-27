@@ -21,7 +21,7 @@ describe('mobilné testovanie', { baseUrl: ""}, () => {
     
   })
   
-  it('mobilné zariadenie', () => {
+  it.only('mobilné zariadenie', () => {
     
     cy.visit(page, {
       onBeforeLoad: (win) => {

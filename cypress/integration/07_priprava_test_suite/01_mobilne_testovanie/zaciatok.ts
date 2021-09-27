@@ -1,9 +1,8 @@
-
-const page = 'cypress/integration/07_priprava_test_suite/01_mobilne_testovanie/pages/device.html'
-
 describe('mobilné testovanie', { baseUrl: ""}, () => {
 
-  it('mobilné rozlíšenie', () => {
+  const page = 'cypress/integration/07_priprava_test_suite/01_mobilne_testovanie/pages/device.html'
+
+  it.only('mobilné rozlíšenie', () => {
 
     cy.visit(page)
     
