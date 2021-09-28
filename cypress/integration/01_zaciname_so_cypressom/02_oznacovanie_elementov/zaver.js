@@ -3,7 +3,7 @@
 it('class, id, attr', { baseUrl: "" }, () => {
 
   cy
-    .visit('./cypress/integration/01_zaklady/02_oznacovanie_elementov/pages/shapes.html');
+    .visit('./cypress/integration/01_zaciname_so_cypressom/02_oznacovanie_elementov/pages/shapes.html');
 
   cy
     .contains('Shapes')
@@ -19,7 +19,7 @@ it('class, id, attr', { baseUrl: "" }, () => {
 it('cypress príkazy', { baseUrl: "" }, () => {
 
   cy
-    .visit('./cypress/integration/01_zaklady/02_oznacovanie_elementov/pages/rainbow.html');
+    .visit('./cypress/integration/01_zaciname_so_cypressom/02_oznacovanie_elementov/pages/rainbow.html');
 
   cy
     .get('li')

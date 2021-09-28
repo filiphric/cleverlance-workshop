@@ -5,7 +5,7 @@
 it('class, id, attr', { baseUrl: "" }, () => {
 
   cy
-    .visit('./cypress/integration/01_zaklady/02_oznacovanie_elementov/pages/shapes.html');
+    .visit('./cypress/integration/01_zaciname_so_cypressom/02_oznacovanie_elementov/pages/shapes.html');
 
 })
 
@@ -23,7 +23,7 @@ it('class, id, attr', { baseUrl: "" }, () => {
 it('advanced selecting', { baseUrl: "" }, () => {
 
   cy
-    .visit('./cypress/integration/01_zaklady/02_oznacovanie_elementov/pages/rainbow.html');
+    .visit('./cypress/integration/01_zaciname_so_cypressom/02_oznacovanie_elementov/pages/rainbow.html');
 
   // #1 označ prvý element pomocou príkazu .first()
   cy
@@ -73,6 +73,6 @@ it('advanced selecting', { baseUrl: "" }, () => {
 it('nested classes', { baseUrl: "" }, () => {
 
   cy
-    .visit('./cypress/integration/01_zaklady/02_oznacovanie_elementov/pages/squares.html');
+    .visit('./cypress/integration/01_zaciname_so_cypressom/02_oznacovanie_elementov/pages/squares.html');
 
 })

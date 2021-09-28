@@ -1,27 +1,3 @@
-
-describe.only('vynechanie testu podľa prehliadača', () => {
-
-  it('test pustený na chrome', () => {
-
-    cy
-      .visit('/')
-
-  });
-
-  it('test pustený na firefoxe', () => {
-
-    cy
-      .visit('/')
-
-  });
-
-  it('test pustený na mobile', () => {
-    cy.skipOn(Cypress.env('viewportWidth') < 350);
-
-  });
-
-});
-
 describe('nestabilný test', () => {
 
   beforeEach(() => {

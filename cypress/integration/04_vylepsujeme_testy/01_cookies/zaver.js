@@ -16,14 +16,14 @@ it('nastavenie cookies', { baseUrl: "" }, () => {
     .setCookie('cookie', 'chocolate')
 
   cy
-    .visit('./cypress/integration/04_pokrocile_testovanie/03_cookies/pages/cookies.html');
+    .visit('./cypress/integration/04_vylepsujeme_testy/01_cookies/pages/cookies.html');
 
 });
 
 it('otestovanie cookies #1', { baseUrl: "" }, () => {
 
   cy
-    .visit('./cypress/integration/04_pokrocile_testovanie/03_cookies/pages/cookies.html');
+    .visit('./cypress/integration/04_vylepsujeme_testy/01_cookies/pages/cookies.html');
 
   cy
     .getCookie('cookie')
@@ -35,7 +35,7 @@ it('otestovanie cookies #1', { baseUrl: "" }, () => {
 it('otestovanie cookies #2', { baseUrl: "" }, () => {
 
   cy
-    .visit('./cypress/integration/04_pokrocile_testovanie/03_cookies/pages/cookies.html');
+    .visit('./cypress/integration/04_vylepsujeme_testy/01_cookies/pages/cookies.html');
 
   cy
     .getCookie('cookie')

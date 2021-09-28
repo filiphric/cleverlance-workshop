@@ -1,28 +1,3 @@
-
-describe('vynechanie testu podľa prehliadača', () => {
-
-  it('test pustený na chrome', { browser: 'chrome' }, () => {
-
-    cy
-      .visit('/')
-
-  });
-
-  it('test pustený na firefoxe', { browser: 'firefox' }, () => {
-
-    cy
-      .visit('/')
-
-  });
-
-  it('test pustený na mobile', { viewportWidth: 300 }, () => {
-
-    cy.skipOn(Cypress.config('viewportWidth') < 350);
-
-  });
-
-});
-
 describe('nestabilný test', () => {
 
   beforeEach(() => {
@@ -32,7 +7,7 @@ describe('nestabilný test', () => {
 
   })
 
-  it('ID boardu musí byť párne', () => {
+  it('ID boardu musí byť párne', { retries: 10 },  () => {
 
     cy
       .intercept('POST', '/api/boards')

@@ -7,8 +7,8 @@ module.exports = async (on, config) => {
       const clipboard = clipboardy.readSync();
       return clipboard;
     },
-
   })
 
+  require('cypress-grep/src/plugin')(config)
 
 }
