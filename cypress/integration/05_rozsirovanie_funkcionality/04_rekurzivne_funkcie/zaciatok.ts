@@ -1,5 +1,3 @@
-import { expectation } from "cypress/types/sinon";
-
 it('should have 3 boards', () => {
 
   cy.visit('/')

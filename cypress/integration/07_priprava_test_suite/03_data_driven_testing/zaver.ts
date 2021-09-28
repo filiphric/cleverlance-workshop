@@ -1,4 +1,4 @@
-describe('data driven tesing', () => {
+describe('data driven testing', () => {
 
   const lists = [
     {

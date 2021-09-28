@@ -27,7 +27,7 @@ it('zmena názvu karty #1', () => {
 // úloha #4: v predošlom príklade sa Ti podarilo zmeniť názov karty.
 // keď však kartu zavrieš, môžeš si všimnúť, že názov ostal nezmenený
 // na túto zmenu, potrebuješ vyvolať zmenu na inpute. vyvolaj ju pomocou 
-// príkazu .trigger('change')
+// príkazu .trigger('input') a .trigger('change')
 it('zmena názvu karty #2', () => {
 
 });

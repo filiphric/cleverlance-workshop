@@ -18,7 +18,6 @@ it('prihlásenie do aplikácie', () => {
 
     })
 
-
   cy
     .visit('/')
 

@@ -14,7 +14,7 @@ it.only('zobrazenie hviezdičky', () => {
 it('skopírovanie atribútov karty', () => {
 
   cy
-    .visit('/board/69269761612?card=17346606170')
+    .visit('/board/27280994580?card=63682250914')
 
     cy
     .get('[data-cy="copy-properties"]')
